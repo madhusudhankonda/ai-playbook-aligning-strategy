@@ -197,7 +197,10 @@ if 'current_page' not in st.session_state:
 st.markdown("""
 <div class="main-header">
     <h1>AI Strategy Mapper</h1>
-    <p>Transform business objectives into actionable AI initiatives using proven strategic frameworks</p>
+    <p>Chapter 3 Tool: Transform business objectives into actionable AI initiatives using proven strategic frameworks</p>
+    <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.9;">
+        Part of the <strong>AI Playbook for Organisations</strong> toolkit by Madhusudhan Konda
+    </p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -282,6 +285,22 @@ with st.sidebar:
         if st.button(f"{button_style} {page_name}", key=f"nav_{i}", use_container_width=True):
             st.session_state.current_page = page_name
             st.rerun()
+    
+    # AI Playbook Toolkit section
+    st.markdown("---")
+    st.markdown("### 📚 AI Playbook Toolkit")
+    st.markdown("""
+    **Other Tools in the Series:**
+    
+    🔍 [**Ch2: AI Readiness Assessment**](https://aiready.streamlit.app/)  
+    *Evaluate your organization's AI readiness*
+    
+    🎯 **Ch3: AI Strategy Mapper** *(current)*  
+    *Align AI initiatives with business goals*
+    
+    📖 [**Read the Book**](https://medium.com/ai-playbook-for-organisations)  
+    *AI Playbook for Organisations*
+    """)
 
 page = st.session_state.current_page
 
@@ -1232,12 +1251,25 @@ st.markdown("""
 <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 2rem; border-radius: 10px; margin-top: 2rem;">
     <div style="text-align: center;">
         <h4 style="color: #667eea; margin-bottom: 1rem;">AI Strategy Mapper</h4>
-        <p style="margin-bottom: 0.5rem; color: #6c757d;">
-            <strong>Purpose-driven AI strategy framework</strong> • Inspired by leading AI transformations
+        <p style="margin-bottom: 1rem; color: #6c757d;">
+            <strong>Chapter 3 Tool from AI Playbook for Organisations</strong> • Strategic AI Planning Framework
         </p>
-        <p style="margin: 0; font-size: 0.9rem; color: #6c757d;">
+        
+        <!-- Book and Toolkit Links -->
+        <div style="margin: 1.5rem 0; padding: 1rem; background: rgba(102, 126, 234, 0.1); border-radius: 8px;">
+            <h5 style="color: #667eea; margin-bottom: 0.5rem;">📚 AI Playbook for Organisations Toolkit</h5>
+            <p style="margin: 0.5rem 0; font-size: 0.9rem; color: #6c757d;">
+                <strong>Ch2:</strong> <a href="https://aiready.streamlit.app/" target="_blank" style="color: #667eea; text-decoration: none;">AI Readiness Assessment</a> • 
+                <strong>Ch3:</strong> AI Strategy Mapper (this tool)
+            </p>
+            <p style="margin: 0; font-size: 0.9rem; color: #6c757d;">
+                📖 Read the book: <a href="https://medium.com/ai-playbook-for-organisations" target="_blank" style="color: #667eea; text-decoration: none;">AI Playbook for Organisations</a>
+            </p>
+        </div>
+        
+        <p style="margin: 0; font-size: 0.8rem; color: #6c757d;">
             Based on: <a href="https://mkonda007.medium.com/ch3-aligning-ai-strategy-with-business-objectives-d4631681053d" 
-            target="_blank" style="color: #667eea; text-decoration: none;">Aligning AI Strategy with Business Objectives</a>
+            target="_blank" style="color: #667eea; text-decoration: none;">Chapter 3: Aligning AI Strategy with Business Objectives</a>
         </p>
     </div>
 </div>
