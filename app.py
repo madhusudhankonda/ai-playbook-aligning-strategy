@@ -1167,7 +1167,7 @@ elif page == "Action Plan":
                         st.write("• Complete pilot development")
                         st.write("• Conduct initial testing")
                         st.write("• Gather stakeholder feedback")
-else:
+                    else:
                         st.write("• Begin requirements gathering")
                         st.write("• Identify data sources")
                         st.write("• Plan resource allocation")
