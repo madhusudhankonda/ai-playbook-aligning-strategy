@@ -36,8 +36,8 @@ wheels/
 .DS_Store
 Thumbs.db
 
-# Streamlit
-.streamlit/
+# Streamlit (allow config, exclude secrets)
+.streamlit/secrets.toml
 
 # Logs
 *.log 
